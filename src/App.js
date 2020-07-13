@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <h1>Movies with redux</h1>
+      <MainPage />
     </div>
   );
 }
