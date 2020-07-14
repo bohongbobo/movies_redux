@@ -11,19 +11,19 @@ const SideNav = () => {
     <div>
       <div>
         <a href="#!" data-target="slide-out" className="sidenav-trigger show-on-large">
-          <h2>Movies List Menu</h2>
+          <h3>Movies List Menu</h3>
         </a>
       </div>
 
       <ul id="slide-out" className="sidenav">
-        <li>
+        <li className="sidenav-close close-sidenav">
+          <i className="material-icons">close</i>
+        </li>
+        <li className="sidenav-close sidenav-content ">
           <Link to="/">Home Page</Link>
-        </li>
-        <li>
           <Link to="/movielist">Moives</Link>
-        </li>
-        <li>
-          <a href="#item3">Item 3</a>
+          <Link to="/likedmovies">Liked Movies</Link>
+          <Link to="/blockedmovies">Blocked Movies</Link>
         </li>
       </ul>
     </div>

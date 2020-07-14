@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function LikedMovies() {
+const MovieList = () => {
   return (
     <div>
       <h1>Movies</h1>
     </div>
   );
-}
+};
+
+export default MovieList;
