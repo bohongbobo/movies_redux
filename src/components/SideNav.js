@@ -9,9 +9,11 @@ const SideNav = () => {
   });
   return (
     <div>
-      <div>
-        <a href="#!" data-target="slide-out" className="sidenav-trigger show-on-large">
-          <h3>Movies List Menu</h3>
+      <div className="movie-list-menu">
+        <a href="#!">
+          <h3 data-target="slide-out" className="sidenav-trigger show-on-large">
+            Movies List Menu
+          </h3>
         </a>
       </div>
 

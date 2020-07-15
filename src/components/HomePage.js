@@ -8,7 +8,7 @@ const HomePage = () => {
   });
   return (
     <div>
-      <h6>Welcome! this is da awesome home page</h6>
+      <h6 className="white-text welcome ">Welcome! this is da awesome home page</h6>
       <div className="carousel">
         <a className="carousel-item" href="#one!">
           <img

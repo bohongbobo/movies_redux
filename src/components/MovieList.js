@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { loadPageContent } from "../actions/actions";
+import { connect } from "react-redux";
 
-const MovieList = () => {
+const MovieList = ({ movies_arr: { allMovie }, loadPageContent }) => {
+  console.log(allMovie, "allMovie");
+
+  useEffect(() => {
+    loadPageContent();
+  }, []);
+
   return (
     <div>
-      <h1>Movies</h1>
+      <h1 className="white-text">Movies</h1>
     </div>
   );
 };
 
-export default MovieList;
+const mapStateToProps = (state) => ({
+  movies_arr: state.movies_arr,
+});
+
+const mapDispatchToProps = {
+  loadPageContent,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MovieList);

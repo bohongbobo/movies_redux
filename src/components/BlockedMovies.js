@@ -3,7 +3,7 @@ import React from "react";
 const BlockedMovies = () => {
   return (
     <div>
-      <h1>Blocked Movies</h1>
+      <h1 className="white-text">Blocked Movies</h1>
     </div>
   );
 };

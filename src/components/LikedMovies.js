@@ -3,7 +3,7 @@ import React from "react";
 const LikedMovies = () => {
   return (
     <div>
-      <h1>Liked Movies</h1>
+      <h1 className="white-text">Liked Movies</h1>
     </div>
   );
 };

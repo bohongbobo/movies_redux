@@ -1,0 +1,1 @@
+export const LOAD_PAGE_CONTENCT = "LOAD_PAGE_CONTENCT";
