@@ -19,11 +19,11 @@ const MovieItems = ({ allMovie }) => {
           </span>
         </div>
         <div className="card-action">
-          <a class="btn-floating btn-large waves-effect waves-light black z-depth-3" title="like">
+          <a class="btn-floating btn-large waves-effect waves-light black z-depth-5" title="like">
             <i class="material-icons">favorite</i>
           </a>
 
-          <a class="btn-floating btn-large waves-effect waves-light black z-depth-3" title="block">
+          <a class="btn-floating btn-large waves-effect waves-light black z-depth-5" title="block">
             <i class="material-icons">block</i>
           </a>
         </div>
