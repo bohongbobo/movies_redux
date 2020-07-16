@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { loadPageContent } from "../actions/actions";
 import { connect } from "react-redux";
+import MovieItems from "./items/MovieItems";
+import "./css/movieslist.css";
 
 const MovieList = ({ movies_arr: { allMovie }, loadPageContent }) => {
   console.log(allMovie, "allMovie");
@@ -11,7 +13,11 @@ const MovieList = ({ movies_arr: { allMovie }, loadPageContent }) => {
 
   return (
     <div>
-      <h1 className="white-text">Movies</h1>
+      <div className="car-list">
+        {allMovie.map((movie) => (
+          <MovieItems key={movie.id} allMovie={movie} />
+        ))}
+      </div>
     </div>
   );
 };
