@@ -5,7 +5,6 @@ import "../css/movieslist.css";
 const MovieItems = ({ allMovie }) => {
   const IMG_URL = "https://image.tmdb.org/t/p/w500";
   let url = IMG_URL + allMovie.poster_path;
-  console.log(allMovie.poster_path, "allMovie.poster_path");
   return (
     <div className="card sticky-action">
       <div className="card-image waves-effect waves-block waves-light">
@@ -13,7 +12,7 @@ const MovieItems = ({ allMovie }) => {
       </div>
       <div>
         <div className="card-content">
-          <i className="material-icons right">more_vert</i>
+          <i className="material-icons right activator">more_vert</i>
           <span alt={allMovie.title} title={allMovie.title}>
             <span className="card-title activator ">{allMovie.title}</span>
           </span>

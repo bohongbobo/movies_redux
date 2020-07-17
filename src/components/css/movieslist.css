@@ -1,3 +1,8 @@
+.page-control {
+  display: flex;
+  justify-content: space-around;
+}
+
 .card {
   width: 15%;
   min-height: 500px;
@@ -37,4 +42,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.activator {
+  cursor: pointer;
 }
